@@ -1,0 +1,80 @@
+git --version
+pwd - Present Working Directory
+ls
+
+git configuration
+   git config --global user.name "BDnyanesh11"
+   git config --global user.email "dnyanesh.bhujbal11@gmail.com"
+   
+   git config --list
+     $ git config --list
+	diff.astextplain.textconv=astextplain
+	filter.lfs.clean=git-lfs clean -- %f
+	filter.lfs.smudge=git-lfs smudge -- %f
+	filter.lfs.process=git-lfs filter-process
+	filter.lfs.required=true
+	http.sslbackend=openssl
+	http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+	core.autocrlf=true
+	core.fscache=true
+	core.symlinks=false
+	pull.rebase=false
+	credential.helper=manager
+	credential.https://dev.azure.com.usehttppath=true
+	init.defaultbranch=main
+	user.name=BDnyanesh11
+	user.email=dnyanesh.bhujbal11@gmail.com
+	core.repositoryformatversion=0
+	core.filemode=false
+	core.bare=false
+	core.logallrefupdates=true
+	core.symlinks=false
+	core.ignorecase=true
+
+
+============================================
+
+git init
+	Initialized empty Git repository in D:/GenAI Projects/GitandGitHubWS/.git/
+	
+git status
+	On branch main
+
+	No commits yet
+
+	Untracked files:
+	  (use "git add <file>..." to include in what will be committed)
+			Git and GitHub.txt
+			index.html
+
+	nothing added to commit but untracked files present (use "git add" to track)
+
+git add index.html		# to add individual file
+
+git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git and GitHub.txt
+
+git add .				# to all all files
+
+git status
+	On branch main
+
+	No commits yet
+
+	Changes to be committed:
+	  (use "git rm --cached <file>..." to unstage)
+			new file:   Git and GitHub.txt
+			new file:   index.html
+
+git rm --cache Git\ and\ GitHub.txt
+	remove from stage(unstaging)
