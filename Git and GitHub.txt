@@ -77,4 +77,11 @@ git status
 			new file:   index.html
 
 git rm --cache Git\ and\ GitHub.txt
-	remove from stage(unstaging)
+	remove file from stage(unstaging)
+	
+
+git reset
+Unstaged changes after reset:
+M       Git and GitHub.txt			# remove specific changes from file
+
+
